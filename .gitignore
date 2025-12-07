@@ -1,8 +1,11 @@
+.arduino-cli/
 .workspace/
 
 # --- PlatformIO ---
 **/.pio/                
 **/.vscode/             
+*README             
+!*README.md             
 *.elf                  
 *.hex                  
 *.bin                  
@@ -14,3 +17,4 @@
 # --- OS / Editor junk ---
 **/.DS_Store           
 **/Thumbs.db           
+
