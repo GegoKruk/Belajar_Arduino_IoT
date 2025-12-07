@@ -1,0 +1,16 @@
+.workspace/
+
+# --- PlatformIO ---
+**/.pio/                
+**/.vscode/             
+*.elf                  
+*.hex                  
+*.bin                  
+
+# --- Arduino IDE ---
+**/build/              
+*.ino.cpp              
+
+# --- OS / Editor junk ---
+**/.DS_Store           
+**/Thumbs.db           
