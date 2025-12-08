@@ -4,15 +4,17 @@
 # --- PlatformIO ---
 **/.pio/                
 **/.vscode/             
-*README             
-!*README.md             
 *.elf                  
 *.hex                  
 *.bin                  
+*README             
+!*README.md     
+PlatformIO/00-Library/            
 
 # --- Arduino IDE ---
 **/build/              
-*.ino.cpp              
+*.ino.cpp   
+Arduino-IDE/libraries/       
 
 # --- OS / Editor junk ---
 **/.DS_Store           
