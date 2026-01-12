@@ -1,0 +1,672 @@
+Microsoft Windows [Version 10.0.19045.6466]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\1. GEGA-SERVER-DELL-SYNC\2-Coding-Project\Arduino-IoT>tree /f
+Folder PATH listing for volume GEGA
+Volume serial number is 86E6-C3A0
+E:.
+│   .gitignore
+│   struktur.txt
+│
+├───.workspace
+│       Arduino-IoT-Workspace.code-workspace
+│       arduino-uno-curriculum.md
+│
+├───Arduino-IDE
+│   ├───First-Try
+│   │   ├───CobaLampu-Kedip
+│   │   │       CobaLampu-Kedip.ino
+│   │   │
+│   │   ├───Lampu-speedUp
+│   │   │       Lampu-speedUp.ino
+│   │   │
+│   │   └───Lampu-TanpaMati
+│   │           Lampu-TanpaMati.ino
+│   │
+│   └───libraries
+│       └───LiquidCrystal_I2C
+│           │   keywords.txt
+│           │   library.json
+│           │   library.properties
+│           │   LICENSE
+│           │   LiquidCrystal_I2C.cpp
+│           │   LiquidCrystal_I2C.h
+│           │   README.md
+│           │
+│           └───examples
+│               ├───CustomChars
+│               │       CustomChars.ino
+│               │
+│               ├───HelloWorld
+│               │       HelloWorld.ino
+│               │
+│               └───SerialDisplay
+│                       SerialDisplay.ino
+│
+├───Firtzing
+│       Coba-Foto.png
+│
+├───note
+│       Arduino-Gega-ComponentList(1).pdf
+│       Arduino-Gega-ComponentList.docx
+│
+└───PlatformIO
+    ├───00-Library
+    │   │   Arduino-LiquidCrystal-I2C-library-master.zip
+    │   │   New-LiquidCrystal-master.zip
+    │   │
+    │   └───LiquidCrystal_I2C
+    │       │   keywords.txt
+    │       │   LiquidCrystal_I2C.cpp
+    │       │   LiquidCrystal_I2C.h
+    │       │   README.md
+    │       │
+    │       └───examples
+    │           ├───BlinkingCursor
+    │           │       BlinkingCursor.ino
+    │           │
+    │           ├───CustomChars
+    │           │       CustomChars.ino
+    │           │
+    │           ├───HelloWorld
+    │           │       HelloWorld.ino
+    │           │
+    │           └───SerialDisplay
+    │                   SerialDisplay.ino
+    │
+    ├───01-ButtonSpeedCtrlLamp-UNO
+    │   │   platformio.ini
+    │   │
+    │   ├───.pio
+    │   │   └───build
+    │   │       │   project.checksum
+    │   │       │
+    │   │       └───uno
+    │   │               idedata.json
+    │   │
+    │   ├───.vscode
+    │   │       c_cpp_properties.json
+    │   │       extensions.json
+    │   │       launch.json
+    │   │
+    │   ├───images
+    │   │       01-ButtonSpeedCtrl-DoubleLamp.fzz
+    │   │       01-ButtonSpeedCtrl-DoubleLamp.png
+    │   │       01-Real-ButtonSpeedCtrl-DoubleLamp.jpg
+    │   │       02-ButtonSpeedCtrl-TripleLamp.fzz
+    │   │       02-ButtonSpeedCtrl-TripleLamp.png
+    │   │       02-Real-ButtonSpeedCtrl-TripleLamp.jpg
+    │   │
+    │   ├───include
+    │   │       README
+    │   │
+    │   ├───lib
+    │   │       README
+    │   │
+    │   ├───src
+    │   │       01-ButtonSpeedCtrl-DoubleLamp.cpp
+    │   │       02-ButtonSpeedCtrl-TripleLamp.cpp
+    │   │
+    │   └───test
+    │           README
+    │
+    ├───02-BrightnessCtrl-UNO
+    │   │   platformio.ini
+    │   │
+    │   ├───.pio
+    │   │   └───build
+    │   │       │   project.checksum
+    │   │       │
+    │   │       └───uno
+    │   │               idedata.json
+    │   │
+    │   ├───.vscode
+    │   │       c_cpp_properties.json
+    │   │       extensions.json
+    │   │       launch.json
+    │   │
+    │   ├───images
+    │   │       1-BrightnessCtrl-UNO.fzz
+    │   │       1-BrightnessCtrl-UNO.png
+    │   │       1-Real-BrightnessCtrl-UNO.jpg
+    │   │
+    │   ├───include
+    │   │       README
+    │   │
+    │   ├───lib
+    │   │       README
+    │   │
+    │   ├───src
+    │   │       1-BrightnessCtrl-UNO.cpp
+    │   │
+    │   └───test
+    │           README
+    │
+    ├───03-LCDwithI2C-UNO
+    │   │   platformio.ini
+    │   │
+    │   ├───.pio
+    │   │   ├───build
+    │   │   │   │   project.checksum
+    │   │   │   │
+    │   │   │   └───uno
+    │   │   │       │   .sconsign311.dblite
+    │   │   │       │   firmware.elf
+    │   │   │       │   firmware.hex
+    │   │   │       │   idedata.json
+    │   │   │       │   libFrameworkArduino.a
+    │   │   │       │   libFrameworkArduinoVariant.a
+    │   │   │       │
+    │   │   │       ├───FrameworkArduino
+    │   │   │       │       abi.cpp.o
+    │   │   │       │       CDC.cpp.o
+    │   │   │       │       HardwareSerial.cpp.o
+    │   │   │       │       HardwareSerial0.cpp.o
+    │   │   │       │       HardwareSerial1.cpp.o
+    │   │   │       │       HardwareSerial2.cpp.o
+    │   │   │       │       HardwareSerial3.cpp.o
+    │   │   │       │       hooks.c.o
+    │   │   │       │       IPAddress.cpp.o
+    │   │   │       │       main.cpp.o
+    │   │   │       │       new.cpp.o
+    │   │   │       │       PluggableUSB.cpp.o
+    │   │   │       │       Print.cpp.o
+    │   │   │       │       Stream.cpp.o
+    │   │   │       │       Tone.cpp.o
+    │   │   │       │       USBCore.cpp.o
+    │   │   │       │       WInterrupts.c.o
+    │   │   │       │       wiring.c.o
+    │   │   │       │       wiring_analog.c.o
+    │   │   │       │       wiring_digital.c.o
+    │   │   │       │       wiring_pulse.c.o
+    │   │   │       │       wiring_pulse.S.o
+    │   │   │       │       wiring_shift.c.o
+    │   │   │       │       WMath.cpp.o
+    │   │   │       │       WString.cpp.o
+    │   │   │       │
+    │   │   │       ├───lib0ba
+    │   │   │       │   │   libWire.a
+    │   │   │       │   │
+    │   │   │       │   └───Wire
+    │   │   │       │       │   Wire.cpp.o
+    │   │   │       │       │
+    │   │   │       │       └───utility
+    │   │   │       │               twi.c.o
+    │   │   │       │
+    │   │   │       ├───libd77
+    │   │   │       │   │   libLiquidCrystal_I2C.a
+    │   │   │       │   │
+    │   │   │       │   └───LiquidCrystal_I2C
+    │   │   │       │           LiquidCrystal_I2C.cpp.o
+    │   │   │       │
+    │   │   │       └───src
+    │   │   │               03-LCDwithI2C-UNO.cpp.o
+    │   │   │
+    │   │   └───libdeps
+    │   │       └───uno
+    │   │           │   integrity.dat
+    │   │           │
+    │   │           └───LiquidCrystal_I2C
+    │   │               │   .piopm
+    │   │               │   keywords.txt
+    │   │               │   library.json
+    │   │               │   library.properties
+    │   │               │   LiquidCrystal_I2C.cpp
+    │   │               │   LiquidCrystal_I2C.h
+    │   │               │   README.md
+    │   │               │
+    │   │               └───examples
+    │   │                   ├───CustomChars
+    │   │                   │       CustomChars.pde
+    │   │                   │
+    │   │                   ├───HelloWorld
+    │   │                   │       HelloWorld.pde
+    │   │                   │
+    │   │                   └───SerialDisplay
+    │   │                           SerialDisplay.pde
+    │   │
+    │   ├───.vscode
+    │   │       c_cpp_properties.json
+    │   │       extensions.json
+    │   │       launch.json
+    │   │
+    │   ├───images
+    │   │       03-Ilus-LCDwithI2C-UNO.png
+    │   │       03-Real-LCDwithI2C-UNO.jpg
+    │   │
+    │   ├───include
+    │   ├───lib
+    │   ├───src
+    │   │       03-LCDwithI2C-UNO.cpp
+    │   │
+    │   └───test
+    │           03-I2Cscanner.cpp
+    │
+    ├───04-TryingBuzzerComponent-UNO
+    │   │   platformio.ini
+    │   │
+    │   ├───.pio
+    │   │   ├───build
+    │   │   │   │   project.checksum
+    │   │   │   │
+    │   │   │   └───uno
+    │   │   │       │   .sconsign311.dblite
+    │   │   │       │   firmware.elf
+    │   │   │       │   firmware.hex
+    │   │   │       │   idedata.json
+    │   │   │       │   libFrameworkArduino.a
+    │   │   │       │   libFrameworkArduinoVariant.a
+    │   │   │       │
+    │   │   │       ├───FrameworkArduino
+    │   │   │       │       abi.cpp.o
+    │   │   │       │       CDC.cpp.o
+    │   │   │       │       HardwareSerial.cpp.o
+    │   │   │       │       HardwareSerial0.cpp.o
+    │   │   │       │       HardwareSerial1.cpp.o
+    │   │   │       │       HardwareSerial2.cpp.o
+    │   │   │       │       HardwareSerial3.cpp.o
+    │   │   │       │       hooks.c.o
+    │   │   │       │       IPAddress.cpp.o
+    │   │   │       │       main.cpp.o
+    │   │   │       │       new.cpp.o
+    │   │   │       │       PluggableUSB.cpp.o
+    │   │   │       │       Print.cpp.o
+    │   │   │       │       Stream.cpp.o
+    │   │   │       │       Tone.cpp.o
+    │   │   │       │       USBCore.cpp.o
+    │   │   │       │       WInterrupts.c.o
+    │   │   │       │       wiring.c.o
+    │   │   │       │       wiring_analog.c.o
+    │   │   │       │       wiring_digital.c.o
+    │   │   │       │       wiring_pulse.c.o
+    │   │   │       │       wiring_pulse.S.o
+    │   │   │       │       wiring_shift.c.o
+    │   │   │       │       WMath.cpp.o
+    │   │   │       │       WString.cpp.o
+    │   │   │       │
+    │   │   │       ├───lib0ba
+    │   │   │       │   │   libWire.a
+    │   │   │       │   │
+    │   │   │       │   └───Wire
+    │   │   │       │       │   Wire.cpp.o
+    │   │   │       │       │
+    │   │   │       │       └───utility
+    │   │   │       │               twi.c.o
+    │   │   │       │
+    │   │   │       ├───lib5c4
+    │   │   │       │   │   libLiquidCrystal_I2C.a
+    │   │   │       │   │
+    │   │   │       │   └───LiquidCrystal_I2C
+    │   │   │       │           LiquidCrystal_I2C.cpp.o
+    │   │   │       │
+    │   │   │       └───src
+    │   │   │               04-BuzzerComponent-UNO.cpp.o
+    │   │   │
+    │   │   └───libdeps
+    │   │       └───uno
+    │   │           │   integrity.dat
+    │   │           │
+    │   │           └───LiquidCrystal_I2C
+    │   │               │   .piopm
+    │   │               │   keywords.txt
+    │   │               │   library.json
+    │   │               │   library.properties
+    │   │               │   LiquidCrystal_I2C.cpp
+    │   │               │   LiquidCrystal_I2C.h
+    │   │               │   README.md
+    │   │               │
+    │   │               └───examples
+    │   │                   ├───CustomChars
+    │   │                   │       CustomChars.pde
+    │   │                   │
+    │   │                   ├───HelloWorld
+    │   │                   │       HelloWorld.pde
+    │   │                   │
+    │   │                   └───SerialDisplay
+    │   │                           SerialDisplay.pde
+    │   │
+    │   ├───.vscode
+    │   │       c_cpp_properties.json
+    │   │       extensions.json
+    │   │       launch.json
+    │   │
+    │   ├───images
+    │   │       04-Real-BuzzerComponent-UNO.jpg
+    │   │
+    │   ├───include
+    │   │       README
+    │   │
+    │   ├───lib
+    │   │       README
+    │   │
+    │   ├───src
+    │   │       04-BuzzerComponent-UNO.cpp
+    │   │
+    │   └───test
+    │           README
+    │
+    ├───05-BuzzerHappyBirthday-UNO
+    │   │   platformio.ini
+    │   │
+    │   ├───.pio
+    │   │   ├───build
+    │   │   │   │   project.checksum
+    │   │   │   │
+    │   │   │   └───uno
+    │   │   │       │   .sconsign311.dblite
+    │   │   │       │   firmware.elf
+    │   │   │       │   firmware.hex
+    │   │   │       │   idedata.json
+    │   │   │       │   libFrameworkArduino.a
+    │   │   │       │   libFrameworkArduinoVariant.a
+    │   │   │       │
+    │   │   │       ├───FrameworkArduino
+    │   │   │       │       abi.cpp.o
+    │   │   │       │       CDC.cpp.o
+    │   │   │       │       HardwareSerial.cpp.o
+    │   │   │       │       HardwareSerial0.cpp.o
+    │   │   │       │       HardwareSerial1.cpp.o
+    │   │   │       │       HardwareSerial2.cpp.o
+    │   │   │       │       HardwareSerial3.cpp.o
+    │   │   │       │       hooks.c.o
+    │   │   │       │       IPAddress.cpp.o
+    │   │   │       │       main.cpp.o
+    │   │   │       │       new.cpp.o
+    │   │   │       │       PluggableUSB.cpp.o
+    │   │   │       │       Print.cpp.o
+    │   │   │       │       Stream.cpp.o
+    │   │   │       │       Tone.cpp.o
+    │   │   │       │       USBCore.cpp.o
+    │   │   │       │       WInterrupts.c.o
+    │   │   │       │       wiring.c.o
+    │   │   │       │       wiring_analog.c.o
+    │   │   │       │       wiring_digital.c.o
+    │   │   │       │       wiring_pulse.c.o
+    │   │   │       │       wiring_pulse.S.o
+    │   │   │       │       wiring_shift.c.o
+    │   │   │       │       WMath.cpp.o
+    │   │   │       │       WString.cpp.o
+    │   │   │       │
+    │   │   │       ├───lib0ba
+    │   │   │       │   │   libWire.a
+    │   │   │       │   │
+    │   │   │       │   └───Wire
+    │   │   │       │       │   Wire.cpp.o
+    │   │   │       │       │
+    │   │   │       │       └───utility
+    │   │   │       │               twi.c.o
+    │   │   │       │
+    │   │   │       ├───lib18c
+    │   │   │       │   │   libLiquidCrystal_I2C.a
+    │   │   │       │   │
+    │   │   │       │   └───LiquidCrystal_I2C
+    │   │   │       │           LiquidCrystal_I2C.cpp.o
+    │   │   │       │
+    │   │   │       └───src
+    │   │   │               main.cpp.o
+    │   │   │
+    │   │   └───libdeps
+    │   │       └───uno
+    │   │           │   integrity.dat
+    │   │           │
+    │   │           └───LiquidCrystal_I2C
+    │   │               │   .piopm
+    │   │               │   keywords.txt
+    │   │               │   library.json
+    │   │               │   library.properties
+    │   │               │   LiquidCrystal_I2C.cpp
+    │   │               │   LiquidCrystal_I2C.h
+    │   │               │   README.md
+    │   │               │
+    │   │               └───examples
+    │   │                   ├───CustomChars
+    │   │                   │       CustomChars.pde
+    │   │                   │
+    │   │                   ├───HelloWorld
+    │   │                   │       HelloWorld.pde
+    │   │                   │
+    │   │                   └───SerialDisplay
+    │   │                           SerialDisplay.pde
+    │   │
+    │   ├───.vscode
+    │   │       c_cpp_properties.json
+    │   │       extensions.json
+    │   │       launch.json
+    │   │
+    │   ├───include
+    │   │       README
+    │   │
+    │   ├───lib
+    │   │       README
+    │   │
+    │   ├───src
+    │   │       05-BuzzerHappyBirthday-UNO.cpp
+    │   │
+    │   └───test
+    │           README
+    │
+    ├───06-LM35-TempSensor-UNO
+    │   │   platformio.ini
+    │   │
+    │   ├───.pio
+    │   │   ├───build
+    │   │   │   │   project.checksum
+    │   │   │   │
+    │   │   │   └───uno
+    │   │   │           idedata.json
+    │   │   │
+    │   │   └───libdeps
+    │   │       └───uno
+    │   │           │   integrity.dat
+    │   │           │
+    │   │           └───LiquidCrystal_I2C
+    │   │               │   .piopm
+    │   │               │   keywords.txt
+    │   │               │   library.json
+    │   │               │   library.properties
+    │   │               │   LiquidCrystal_I2C.cpp
+    │   │               │   LiquidCrystal_I2C.h
+    │   │               │   README.md
+    │   │               │
+    │   │               └───examples
+    │   │                   ├───CustomChars
+    │   │                   │       CustomChars.pde
+    │   │                   │
+    │   │                   ├───HelloWorld
+    │   │                   │       HelloWorld.pde
+    │   │                   │
+    │   │                   └───SerialDisplay
+    │   │                           SerialDisplay.pde
+    │   │
+    │   ├───.vscode
+    │   │       c_cpp_properties.json
+    │   │       extensions.json
+    │   │       launch.json
+    │   │
+    │   ├───include
+    │   │       README
+    │   │
+    │   ├───lib
+    │   │       README
+    │   │
+    │   ├───src
+    │   │       06-LM35-TempSensor-UNO.cpp
+    │   │
+    │   └───test
+    │           README
+    │
+    └───07-RFID-Reader-UNO
+        │   platformio.ini
+        │
+        ├───.pio
+        │   ├───build
+        │   │   │   project.checksum
+        │   │   │
+        │   │   └───uno
+        │   │       │   .sconsign311.dblite
+        │   │       │   firmware.elf
+        │   │       │   firmware.hex
+        │   │       │   idedata.json
+        │   │       │   libFrameworkArduino.a
+        │   │       │   libFrameworkArduinoVariant.a
+        │   │       │
+        │   │       ├───FrameworkArduino
+        │   │       │       abi.cpp.o
+        │   │       │       CDC.cpp.o
+        │   │       │       HardwareSerial.cpp.o
+        │   │       │       HardwareSerial0.cpp.o
+        │   │       │       HardwareSerial1.cpp.o
+        │   │       │       HardwareSerial2.cpp.o
+        │   │       │       HardwareSerial3.cpp.o
+        │   │       │       hooks.c.o
+        │   │       │       IPAddress.cpp.o
+        │   │       │       main.cpp.o
+        │   │       │       new.cpp.o
+        │   │       │       PluggableUSB.cpp.o
+        │   │       │       Print.cpp.o
+        │   │       │       Stream.cpp.o
+        │   │       │       Tone.cpp.o
+        │   │       │       USBCore.cpp.o
+        │   │       │       WInterrupts.c.o
+        │   │       │       wiring.c.o
+        │   │       │       wiring_analog.c.o
+        │   │       │       wiring_digital.c.o
+        │   │       │       wiring_pulse.c.o
+        │   │       │       wiring_pulse.S.o
+        │   │       │       wiring_shift.c.o
+        │   │       │       WMath.cpp.o
+        │   │       │       WString.cpp.o
+        │   │       │
+        │   │       ├───lib045
+        │   │       │   │   libSPI.a
+        │   │       │   │
+        │   │       │   └───SPI
+        │   │       │           SPI.cpp.o
+        │   │       │
+        │   │       ├───lib0ba
+        │   │       │   │   libWire.a
+        │   │       │   │
+        │   │       │   └───Wire
+        │   │       │       │   Wire.cpp.o
+        │   │       │       │
+        │   │       │       └───utility
+        │   │       │               twi.c.o
+        │   │       │
+        │   │       ├───lib635
+        │   │       │   │   libLiquidCrystal_I2C.a
+        │   │       │   │
+        │   │       │   └───LiquidCrystal_I2C
+        │   │       │           LiquidCrystal_I2C.cpp.o
+        │   │       │
+        │   │       ├───lib64c
+        │   │       │   │   libMFRC522.a
+        │   │       │   │
+        │   │       │   └───MFRC522
+        │   │       │           MFRC522.cpp.o
+        │   │       │           MFRC522Extended.cpp.o
+        │   │       │
+        │   │       └───src
+        │   │               main.cpp.o
+        │   │
+        │   └───libdeps
+        │       └───uno
+        │           │   integrity.dat
+        │           │
+        │           ├───LiquidCrystal_I2C
+        │           │   │   .piopm
+        │           │   │   keywords.txt
+        │           │   │   library.json
+        │           │   │   library.properties
+        │           │   │   LiquidCrystal_I2C.cpp
+        │           │   │   LiquidCrystal_I2C.h
+        │           │   │   README.md
+        │           │   │
+        │           │   └───examples
+        │           │       ├───CustomChars
+        │           │       │       CustomChars.pde
+        │           │       │
+        │           │       ├───HelloWorld
+        │           │       │       HelloWorld.pde
+        │           │       │
+        │           │       └───SerialDisplay
+        │           │               SerialDisplay.pde
+        │           │
+        │           └───MFRC522
+        │               │   .piopm
+        │               │   changes.txt
+        │               │   keywords.txt
+        │               │   library.json
+        │               │   library.properties
+        │               │   README.rst
+        │               │   UNLICENSE
+        │               │
+        │               ├───examples
+        │               │   ├───ChangeUID
+        │               │   │       ChangeUID.ino
+        │               │   │
+        │               │   ├───DumpInfo
+        │               │   │       DumpInfo.ino
+        │               │   │
+        │               │   ├───firmware_check
+        │               │   │       firmware_check.ino
+        │               │   │
+        │               │   ├───FixBrickedUID
+        │               │   │       FixBrickedUID.ino
+        │               │   │
+        │               │   ├───MifareClassicValueBlock
+        │               │   │       MifareClassicValueBlock.ino
+        │               │   │
+        │               │   ├───MinimalInterrupt
+        │               │   │       MinimalInterrupt.ino
+        │               │   │
+        │               │   ├───Ntag216_AUTH
+        │               │   │       Ntag216_AUTH.ino
+        │               │   │
+        │               │   ├───ReadAndWrite
+        │               │   │       ReadAndWrite.ino
+        │               │   │
+        │               │   ├───ReadNUID
+        │               │   │       ReadNUID.ino
+        │               │   │
+        │               │   ├───ReadUidMultiReader
+        │               │   │       ReadUidMultiReader.ino
+        │               │   │
+        │               │   ├───RFID-Cloner
+        │               │   │       RFID-Cloner.ino
+        │               │   │
+        │               │   ├───rfid_default_keys
+        │               │   │       rfid_default_keys.ino
+        │               │   │
+        │               │   ├───rfid_read_personal_data
+        │               │   │       rfid_read_personal_data.ino
+        │               │   │
+        │               │   └───rfid_write_personal_data
+        │               │           rfid_write_personal_data.ino
+        │               │
+        │               └───src
+        │                       deprecated.h
+        │                       MFRC522.cpp
+        │                       MFRC522.h
+        │                       MFRC522Extended.cpp
+        │                       MFRC522Extended.h
+        │                       require_cpp11.h
+        │
+        ├───.vscode
+        │       c_cpp_properties.json
+        │       extensions.json
+        │       launch.json
+        │
+        ├───include
+        │       README
+        │
+        ├───lib
+        │       README
+        │
+        ├───src
+        │       main.cpp
+        │
+        └───test
+                README
+
+
+E:\1. GEGA-SERVER-DELL-SYNC\2-Coding-Project\Arduino-IoT>
